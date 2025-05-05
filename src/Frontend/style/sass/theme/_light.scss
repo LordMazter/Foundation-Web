@@ -1,0 +1,7 @@
+@use '../common/variables' as *;
+
+//------------------ THEME LIGHT ------------------//
+body {
+   background: var(--background-tertiary);
+   color:      var(--txt-color-primary);
+}

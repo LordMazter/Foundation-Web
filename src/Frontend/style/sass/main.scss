@@ -1,20 +1,17 @@
-// COMPONENTS
-@use "./components/buttons";
-
-//UTILS
-@use "./utils/mixins";
-@use "./utils/typo";
+// BASE
+@use './base/a-base';
 
 // COMMON
-@use "./common/fonts";
-@use "./common/variables";
-@use "./common/icons";
+@use './common/a-common';
 
-// BASE 
-@use "./base/reset";
+// COMPONENTS
+@use './components/a-components';
 
-body {
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-}
+// THEME
+@use './theme/a-theme';
+
+// UTILS
+@use './utils/a-utils';
+
+// SCREENS
+@use './screens/a-screens';
