@@ -1,0 +1,20 @@
+// COMPONENTS
+@use "./components/buttons";
+
+//UTILS
+@use "./utils/mixins";
+@use "./utils/typo";
+
+// COMMON
+@use "./common/fonts";
+@use "./common/variables";
+@use "./common/icons";
+
+// BASE 
+@use "./base/reset";
+
+body {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
