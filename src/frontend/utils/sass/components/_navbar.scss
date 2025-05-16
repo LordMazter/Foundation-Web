@@ -73,7 +73,7 @@
    }
    
    // On Desktop
-   @media (width >= 540px) {
+   @media (width > 540px) {
       flex-direction: column;
       width:          var(--marg-hight);
       padding:        calc(var(--padd-normal) * 1.25);
@@ -122,7 +122,7 @@
       }
    }
    // On Mobile
-   @media (width < 540px) {
+   @media (width <= 540px) {
       height:        var(--marg-hight);
       box-shadow:    inset 0 1.5px 0 var(--standar-background);
       border-radius: var(--padd-normal) var(--padd-normal) 0 0;
