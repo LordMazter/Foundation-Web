@@ -1,0 +1,14 @@
+// TYPOGRAPHY 
+@font-face {
+   font-family: 'ZillaSlab';
+   src:          url('../fonts/zilla-slab/zilla-slap.woff2') format('woff2'),
+                 url('../fonts/zilla-slab/zilla-slap.ttf')   format('truetype');
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src:          url('../fonts/roboto/roboto-regular.woff2') format('woff2'),
+                 url('../fonts/roboto/roboto-regular.ttf')   format('truetype');
+   font-display: swap;
+}

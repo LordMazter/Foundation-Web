@@ -1,0 +1,52 @@
+// ------------------ FORMATTING ------------------//
+body {
+}
+
+// ------------------ SECTIONS ------------------//
+.block--1 {
+   display:         flex;
+   flex-direction:  column;
+   justify-content: center;
+   align-items:     center;
+   width:           100%;
+   height:          100%;
+   gap:             var(--padd-medium);
+   background:      var(--background-primary);
+   
+   .inline-caption {
+      color:     var(--accent-sienna);
+      transform: rotate(1.5deg);
+   }
+   
+   .navigation-button-view {
+      display:         flex;
+      flex-wrap:       wrap;
+      justify-content: center;
+      gap:             var(--padd-base) 0;
+      margin-inline:   var(--padd-medium);
+      
+      .simple-button {
+         flex: 1 0 auto;
+      }
+   }
+}
+
+.block--2 {
+   background: var(--accent-rose-light);
+}
+
+.block--3 {
+   background: var(--accent-moss-light);
+}
+
+.block--4 {
+   background: var(--accent-honeydew-light);
+}
+
+.block--5 {
+   background: var(--accent-alice-light);
+}
+
+.block--6 {
+   background: var(--accent-sienna-light);
+}
