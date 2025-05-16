@@ -1,0 +1,35 @@
+//-------------------- UTILITIES --------------------//
+.is--centered  { text-align:  center; }
+.is--alignleft { text-align:  left; }
+
+// -------------------- BASIC TEXT --------------------//
+.min--text {
+   font-size: .85rem;
+   color:      var(--gray);
+}
+
+
+// -------------------- OTHERS --------------------//
+.static--txt {
+   user-select: none;
+}
+
+
+//-------------------- HEADINGS --------------------//
+h1, h2, h3, h4 {
+   font-family: 'ZillaSlab', Times New Roman;
+}
+
+//-------------------- PARAGRAPH --------------------//
+p, span {
+   color: var(--txt-color-secondary);
+   max-width: 980px;
+}
+
+.caption-title {
+   font-size: 1.4rem;
+   
+   @media (width <= 520px) {
+      font-size: 1.2rem;
+   }
+}
