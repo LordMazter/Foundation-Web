@@ -1,9 +1,0 @@
-//------------------- EFFECTS -------------------//
-// Normal Shadow
-@mixin shadow-base {
-   box-shadow: 0 0 100px -30px var(--medium-background);
-}
-// Color Shadow
-@mixin shadow-colored($shadow-color) {
-   box-shadow: 0 0 100px -30px $shadow-color;
-}
