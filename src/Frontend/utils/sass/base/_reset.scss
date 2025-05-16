@@ -1,0 +1,17 @@
+@use '../utilities/_typo.scss' as *;
+
+// ----------------- RESET ALL -------------------//
+* {
+   margin:          0;
+   padding:         0;
+   box-sizing:      border-box;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Roboto', Times New Roman;
+   font-size:    16px;
+}
+
+
+// ----------------- RESET UI -------------------//
