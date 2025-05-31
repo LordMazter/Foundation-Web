@@ -7,3 +7,10 @@
 @mixin shadow-colored($shadow-color) {
    box-shadow: 0 0 100px -30px $shadow-color;
 }
+
+
+//------------------- BUTTON EFFECT -------------------//
+@mixin solid-shadow($shadow-color) {
+   box-shadow: 1.5px 6.3px 0 $shadow-color, 0 0 0 2px $shadow-color;
+}
+

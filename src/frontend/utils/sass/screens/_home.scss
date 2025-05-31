@@ -1,0 +1,264 @@
+// ------------------ FORMATTING ------------------//
+.block__container--content {
+   
+   &:last-child {
+      box-shadow: inset 0 1px 0 var(--standar-backdrop) !important;
+   }
+}
+
+// ------------------ SECTIONS ------------------//
+// Hero
+.hero--block {
+   display:         flex;
+   flex-direction:  column;
+   justify-content: center;
+   align-items:     center;
+   gap:             var(--padd-medium);
+   background:      var(--background-primary);
+   
+   .hero-view {
+      display:         flex;
+      flex-direction:  column;
+      justify-content: center;
+      gap:             var(--padd-medium);
+      padding:         var(--padd-hight) 0;
+      
+      .hero-logo-view {
+         display: flex;
+         
+         .logo-display {
+            width:         100px;
+            margin:        auto;
+            aspect-ratio:  1 / 1;
+            background:    var(--soft-backdrop);
+            border-radius: 999px;
+         }
+      }
+   }
+   
+   .inline-caption {
+      color:     var(--accent-sienna);
+      transform: rotate(3deg);
+   }
+   .inline-slogan {
+      color:     var(--accent-sienna);
+   }
+   
+   .navigation-button-view {
+      display:         flex;
+      flex-wrap:       wrap;
+      justify-content: center;
+      gap:             var(--padd-base) 0;
+      padding:         var(--padd-base) 0;
+      margin-inline:   var(--padd-medium);
+      
+      .simple-button {
+         flex: 1 0 auto;
+      }
+      
+      @media (width < 540px) {
+         flex-direction: column;
+         gap:            var(--padd-minimus);
+      }
+   }
+}
+
+// Attentions Preview
+.attentions--block {
+   background: var(--accent-rose-light);
+   
+   .attentions-view {
+      display:        flex;
+      flex-direction: column;
+      height:         100%;
+      
+      .title-intro-area {
+         
+         .display-title {
+            color: var(--accent-rose);
+         }
+      }
+      
+      .cards-view-area {
+         display:         flex;
+         justify-content: center;
+         align-items:     center;
+         padding:         var(--padd-hight) 0;
+         gap:             var(--padd-base);
+         height:          100%;
+         
+         @media (width <= 920px) {
+            flex-direction: column;
+         }
+         
+         .card-box {
+            
+            &.in--rose {
+               
+               @media (width > 920px) {
+                  z-index:   50;
+                  transform: translateY(calc(var(--padd-base) * -1)) scale(1.06);
+               }
+               @media (width <= 920px) {
+                  order: -1;
+               }
+            }
+            
+            &.in--azure {
+               
+               @media (width > 920px) {
+                  z-index:   25;
+                  transform: rotate(-1.5deg) translateX(var(--padd-medium));
+               }
+               @media (width <= 920px) and (width >= 640px) {
+                  transform: translateX(-25%);
+               }
+            }
+            
+            &.in--amethyst {
+               
+               @media (width > 920px) {
+                  z-index:   25;
+                  transform: rotate(1.5deg) translateX(calc(var(--padd-medium) * -1));
+               }
+               @media (width <= 920px) and (width >= 640px) {
+                  transform: translateX(25%);
+               }
+            }
+         }
+      }
+   }
+}
+
+// Acitivities (link to Instagram)
+.activities--block {
+   background: var(--accent-moss-light);
+   
+   .activities-view {
+   	display:        flex;
+   	flex-direction: column;
+   	height:         100%;
+   	padding-bottom: var(--padd-base) !important;
+      
+      .title-intro-area {
+         
+         .display-title {
+             color:         var(--accent-moss);
+         }
+      }
+      
+      .links-container-view {
+      	display:             flex;
+      	flex-direction:      column;
+      	justify-content:     center;
+      	align-items:         center;
+      	height:              100%;
+      	width:               100%;
+      	padding:             var(--padd-medium) var(--padd-medium) var(--marg-hight) var(--padd-medium);
+      	background-image:    url('../img/assets/motive-grid-asset.webp');
+      	background-position: center;
+      	background-size:     cover;
+      	gap:                 var(--padd-medium);
+      	position:            relative;
+      	
+      	.link-card-box {
+      	   
+      	   &.in--moss {
+      	      rotate: -1deg;
+      	   }
+      	   &.in--azure {
+      	      rotate: -1.5deg;
+      	   }
+      	   &.in--amethyst {
+      	      rotate: 1.5deg;
+      	   }
+      	   &.in--sienna {
+      	      rotate: -0.8deg;
+      	   }
+      	   
+      	   @media (width > 768px) {
+         	   &.in--moss {
+         	      transform: translateX(-20%) scale(1.12);
+         	   }
+         	   &.in--azure {
+         	      transform: translateX(30%) scale(0.86);
+         	   }
+         	   &.in--amethyst {
+         	      transform: translateX(-35%) scale(0.93);
+         	   }
+         	   &.in--sienna {
+         	      transform: translateX(25%);
+         	   }
+      	   }
+      	}
+      	
+      	&::before {
+      	   display:    block;
+      	   content:    "";
+      	   position:   absolute;
+      	   width:      100%;
+      	   height:     100%;
+      	   top:        0;
+      	   left:       0;
+      	   background: var(--accent-moss-light);
+      	   mask-image: radial-gradient(at center, transparent, white);
+      	}
+      }
+   }
+   
+   @media (width <= 540px) {
+   	padding-bottom: 0 !important;
+   }
+}
+
+// Schedule 
+.schedules--block {
+   background: var(--accent-azure-light);
+   
+   .title-intro-area {
+      
+      .display-title {
+         color: var(--accent-azure);
+      }
+   }
+   
+   .schedules-card-container {
+      display:               grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-rows:    auto;
+      padding:               var(--padd-medium) 0;
+      gap:                   var(--padd-medium) var(--padd-base);
+      height:                100%;
+      
+      .card-box {
+         width: 100% !important;
+         flex: 1 !important;
+      }
+   }
+}
+
+// Mission & Vission
+.mission--block {
+   background: var(--accent-alice-light);
+   color:      var(--accent-alice);
+   
+   .mission-view {
+      display:         flex;
+      flex-direction:  column;
+      height:          100%;
+      
+      .about-area { 
+         display:         flex;
+         flex-direction:  column;
+         align-items:     center;
+         justify-content: center;
+         height:          100%;
+         gap:             var(--padd-base);
+         padding:         var(--padd-hight) 0;
+      }
+   }
+}
+
+.authors--block {
+   background: var(--accent-amethyst-light);
+}

@@ -1,0 +1,25 @@
+
+.label-box {
+   display:         inline-flex;
+   justify-content: center;
+   align-items:     center;
+   border-radius:   999px;
+   padding:         var(--padd-base) var(--padd-base);
+   gap:             var(--padd-minimus);
+   
+   .label-box--tag {
+      display: block;
+   }
+   
+   svg {
+      fill: var(--white);
+   }
+   
+   &.model--solid {
+      color: var(--white);
+      
+      &.in--azure {
+         background: var(--accent-azure);
+      }
+   }
+}

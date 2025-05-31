@@ -1,0 +1,230 @@
+.card {
+   box-shadow: 0 6.3px 0, 0 0 0 2px;
+}
+
+//--------------------- SERVICE CARDS ---------------------//
+.card-box {
+   display:        flex;
+   flex-direction: column;
+   gap:            var(--padd-base);
+   align-items:    center;
+   /* min-width:      280px; */
+   min-height:     180px;
+   /* height:         fit-content; */
+   padding:        var(--padd-base);
+   border-radius:  var(--padd-base);
+   position:       relative;
+   
+   //-------- STYLE CARD --------//
+   &.model--base {
+      background: var(--background-tertiary);
+      box-shadow: 0 6.3px 0, 0 0 0 2px;
+   }
+   
+   //-------- COLO CARD --------//
+   &.in--rose {
+      color:  var(--accent-rose);
+      filter: drop-shadow(0 var(--marg-base) var(--marg-medium) rgb(var(--accent-rose-rgb), 0.18));
+      
+      .card-caption-img {
+         background: var(--accent-rose-light);
+      }
+   }
+   &.in--azure {
+      color:  var(--accent-azure);
+      filter: drop-shadow(0 var(--padd-base) var(--marg-medium) rgb(var(--accent-azure-rgb), 0.18));
+      
+      .card-caption-img {
+         background: var(--accent-azure-light);
+      }
+   }
+   &.in--amethyst {
+      color:  var(--accent-amethyst);
+      filter: drop-shadow(0 var(--padd-base) var(--marg-medium) rgb(var(--accent-amethyst-rgb), 0.18));
+      
+      .card-caption-img {
+         background: var(--accent-amethyst-light);
+      }
+   }
+   &.in--honeydew {
+      color:  var(--accent-honeydew);
+      filter: drop-shadow(0 var(--padd-base) var(--marg-medium) rgb(var(--accent-amethyst-rgb), 0.18));
+      
+      .card-caption-img {
+         background: var(--accent-honeydew-light);
+      }
+   }
+   
+   //-------- SHAPE CARD --------//
+   &.type--service {
+      max-width:  340px;
+      margin-top: var(--padd-hight);
+      
+      .card-caption-img {
+         width:         100%;
+         height:        fit-content;
+         aspect-ratio:  1 / 1;
+         border-radius: calc(var(--padd-base) - var(--padd-minimus));
+         margin-top:    calc(var(--padd-hight) * -1);
+         border:        1px solid;
+      }
+      
+      .card-info {
+         padding-bottom: var(--padd-base);
+         text-align:     center;
+         
+         .caption-title {
+            padding-bottom: var(--padd-base);
+            color:          inherit;
+         }
+      }
+      
+      .simple-button {
+         width: 100%;
+      }
+   }
+   
+   &.type--stamp {
+      margin-top: var(--padd-medium);
+      
+      .label-box {
+         margin-top: calc(var(--padd-base) * -2.8);
+      }
+      
+      .card-info {
+         width:         100%;
+         height:        100%;
+         padding:       var(--padd-medium);
+         border-radius: var(--padd-minimus);
+         text-align:    center;
+         
+         .head-title {
+            color: var(--txt-color-primary);
+         }
+      }
+      
+      &.in--azure .card-info {
+         background: var(--accent-azure-light);
+      }
+   }
+}
+
+
+
+//--------------------- LINK CARDS ---------------------//
+.link-card-box {
+   display:       inline-flex;
+   border-radius: var(--padd-minimus);
+   padding:       var(--padd-base);
+   gap:           var(--padd-base);
+   min-width:     200px;
+   max-width:     420px;
+   position:      relative;
+   transition:    scale .3s ease;
+   cursor:        pointer;
+   z-index:       50;
+   
+   .link-caption-img {
+      height:        100%;
+      aspect-ratio:  1 / 1;
+      border-radius: var(--padd-minimus);
+      
+   }
+   
+   .link-info {
+      overflow: hidden;
+      
+      .caption-title {
+         margin-bottom: var(--padd-minimus);
+         color:         inherit;
+      }
+      
+      .primary-text {
+         display:           -webkit-box;
+         -webkit-line-clamp: 1;
+         -webkit-box-orient: vertical;
+         overflow:           hidden;
+         text-overflow:      ellipsis;
+         color:              var(--txt-color-quarter);
+      }
+   }
+   
+   &.model--base {
+      background: var(--background-tertiary);
+      box-shadow: -6px 0 0 2px, 0 0 0 2px;
+   }
+   
+   &.in--moss {
+      color:  var(--accent-moss);
+      filter: drop-shadow(0 var(--padd-medium) var(--marg-medium) rgba(var(--accent-moss-rgb), 0.24));
+      
+      .link-caption-img {
+         background: var(--accent-moss-light);
+      }
+      
+      &::after {
+         background-color: var(--accent-moss);
+      }
+   }
+   &.in--azure {
+      color:  var(--accent-azure);
+      filter: drop-shadow(0 var(--padd-medium) var(--marg-medium) rgba(var(--accent-azure-rgb), 0.24));
+      
+      .link-caption-img {
+         background: var(--accent-azure-light);
+      }
+      
+      &::after {
+         background-color: var(--accent-azure);
+      }
+   }
+   &.in--amethyst {
+      filter: drop-shadow(0 var(--padd-medium) var(--marg-medium) rgba(var(--accent-amethyst-rgb), 0.24));
+      color:  var(--accent-amethyst);
+      
+      .link-caption-img {
+         background: var(--accent-amethyst-light);
+      }
+      
+      &::after {
+         background-color: var(--accent-amethyst);
+      }
+   }
+   &.in--sienna {
+      color:  var(--accent-sienna);
+      filter: drop-shadow(0 var(--padd-medium) var(--marg-medium) rgba(var(--accent-sienna-rgb), 0.24));
+      
+      .link-caption-img {
+         background: var(--accent-sienna-light);
+      }
+      
+      &::after {
+         background-color: var(--accent-sienna);
+      }
+   }
+   
+   
+   &::after {
+      display:             block;
+      content:             "";
+      position:            absolute;
+      width:               40px;
+      aspect-ratio:        1 / 1;
+      border-radius:       99px;
+      top:                 calc(var(--padd-medium) * -0.6);
+      right:               calc(var(--padd-medium) * -0.6);
+      background-image:    url('../img/icons/link-external-arrow.webp');
+      background-position: center;
+      background-size:     60%;
+      background-repeat:   no-repeat;
+   }
+   
+   &:hover {
+      @media (width > 540px) {
+         scale: 1.2;
+      }
+      @media (width <= 540px) {
+         scale: 1.04;
+      }
+   }
+}

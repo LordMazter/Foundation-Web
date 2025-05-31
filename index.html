@@ -3,13 +3,17 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
-   <meta name="author"      content="Isaac Olivera">
-   <meta name="description" content="Fundación Nacional Del Niño Simon, Lara, Barquisimeto. Consultas, atenciones y noticias.">                                   
-   <link rel="icon"         href="./#">
+   <title>Fundación Nacional Niño Simón (FNNS) - Lara</title>
+   
+   <meta name="author"       content="Isaac Olivera">
+   <meta name="description"  content="Fundación Nacional Del Niño Simon, Lara, Barquisimeto. Consultas, atenciones y noticias">            
+   
+   <meta property="og:image" content="./src/frontend/utils/img/assets/cover-banner.webp">
+   
+   <link rel="icon"         href="./src/frontend/utils/img/assets/favicon-480.webp">
    <link rel="preload"      href="./src/frontend/utils/fonts/zilla-slab/zilla-slap.woff2" as="font" type="font/woff2" crossorigin>
    <link rel="preload"      href="./src/frontend/utils/fonts/roboto/roboto-regular.woff2" as="font" type="font/woff2" crossorigin>
    <link rel="stylesheet"   href="./src/frontend/utils/css/main.css">
-   <title>Fundación Nacional Niño Simón (FNNS) - Lara</title>
 </head>
 <body>
    
@@ -24,7 +28,7 @@
                </object>
                <div class="navbar-logotype side--hidden">
                   <h1 class="inline--logotext">
-                     Fundación Nacional "El Niño Simón"
+                     Fundación Nacional Del Niño Simón
                   </h1>
                </div>
             </div>
@@ -107,57 +111,469 @@
          </footer>
       </nav>
       <main class="block__container">
-         <section class="block__container--content block--1" id="hero-block">
-            <div class="hero-title-block">
-               <h1 class="display-header is--centered">
-                  Fundación Nacional
-                  <span class="inline-caption">
-                     “El Niño Simón”
-                  </span>
-               </h1>
-               <p class="caption-title is--centered">
-                  Lorem ipsum incidunt est porro quisquam rerum dolorum sint tempora. At fuga voluptatem aut et sunt blanditiis non sit aut quia. Et excepturi suscipit vel reprehenderit.
-               </p>
+         <section class="block__container--content block hero--block"       id="hero-block">
+            <div class="hero-view layout__base">
+               <div class="hero-title-block">
+                  <figure class="hero-logo-view">
+                     <img class="logo-display" alt="">
+                  </figure>
+                  <h1 class="display-header is--centered">
+                     Fundación Nacional
+                     <span class="inline-caption">
+                        “El Niño Simón”
+                     </span>
+                     <span class="inline-slogan">
+                        Regional Lara
+                     </span>
+                  </h1>
+                  <p class="caption-title is--centered">
+                     Lorem ipsum incidunt est porro quisquam rerum dolorum sint tempora. At fuga voluptatem aut et sunt blanditiis non sit aut quia. Et excepturi suscipit vel reprehenderit.
+                  </p>
+               </div>
+               <div class="navigation-button-view">
+                  <button class="simple-button cta model-light type--circular">
+                  	<a class="button-link" href="#services-block">
+                  		<span class="linked-tagline-btn">Atenciones</span>
+                  	</a>
+                  </button>
+                  <button class="simple-button cta model-light type--circular">
+                  	<a class="button-link" href="#activities-block">
+                  		<span class="linked-tagline-btn">Actividades</span>
+                  	</a>
+                  </button>
+                  <button class="simple-button cta model-light type--circular">
+                  	<a class="button-link" href="#schedules-block">
+                  		<span class="linked-tagline-btn">Horarios</span>
+                  	</a>
+                  </button>
+                  <button class="simple-button cta model-light type--circular">
+                  	<a class="button-link" href="#mission-block">
+                  		<span class="linked-tagline-btn">Misión</span>
+                  	</a>
+                  </button>
+               </div>
             </div>
-            <div class="navigation-button-view">
-               <button class="simple-button cta model-light type--circular">
-               	<a class="button-link" href="#services-block">
-               		<span class="linked-tagline-btn">Atenciones</span>
-               	</a>
-               </button>
-               <button class="simple-button cta model-light type--circular">
-               	<a class="button-link" href="#activities-block">
-               		<span class="linked-tagline-btn">Actividades</span>
-               	</a>
-               </button>
-               <button class="simple-button cta model-light type--circular">
-               	<a class="button-link" href="#times-block">
-               		<span class="linked-tagline-btn">Horarios</span>
-               	</a>
-               </button>
-               <button class="simple-button cta model-light type--circular">
-               	<a class="button-link" href="#authors-block">
-               		<span class="linked-tagline-btn">Autores</span>
-               	</a>
-               </button>
+         </section>
+         <section class="block__container--content block attentions--block" id="services-block">
+            <div class="attentions-view layout__base">
+               <div class="title-intro-area">
+                  <h2 class="display-title">
+                     Atenciones Principales
+                  </h2>
+               </div>
+               <div class="cards-view-area">
+                  <div class="card-box model--base type--service in--azure">
+                     <img class="card-caption-img" alt="">
+                     <div class="card-info">
+                        <h3 class="caption-title">
+                           Atención 1
+                        </h3>
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, culpa.
+                        </p>
+                     </div>
+                     <button class="simple-button in--azure model-filled type--circular">
+                     	<a class="button-link" href="#">
+                     	   <span class="linked-tagline-btn">Ver detalles</span>
+                     	</a>
+                     </button>
+                  </div>
+                  <div class="card-box model--base in--rose type--service">
+                     <img class="card-caption-img" alt="">
+                     <div class="card-info">
+                        <h3 class="caption-title">
+                           Atención 1
+                        </h3>
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, culpa.
+                        </p>
+                     </div>
+                     <button class="simple-button in--rose model-filled type--circular">
+                     	<a class="button-link" href="#">
+                     	   <span class="linked-tagline-btn">Ver detalles</span>
+                     	</a>
+                     </button>
+                  </div>
+                  <div class="card-box model--base in--amethyst type--service">
+                     <img class="card-caption-img" alt="">
+                     <div class="card-info">
+                        <h3 class="caption-title">
+                           Atención 1
+                        </h3>
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, culpa.
+                        </p>
+                     </div>
+                     <button class="simple-button in--amethyst model-filled type--circular">
+                     	<a class="button-link" href="#">
+                     	   <span class="linked-tagline-btn">Ver detalles</span>
+                     	</a>
+                  </button>
+                  </div>
+               </div>
+               <div class="scroll-buttons-area">
+                  
+               </div>
             </div>
          </section>
-         <section class="block__container--content block--2" id="services-block">
-            
+         <section class="block__container--content block activities--block" id="activities-block">
+            <div class="activities-view">
+               <div class="title-intro-area layout__base">
+                  <h2 class="display-title">
+                     Actividades
+                  </h2>
+                  <p class="caption-paragraph is--centered">
+                     Descubre nuevas actualizaciones y participa en las actividades de la Fundación Nacional Del Niño Simón en Instagram.
+                  </p>
+               </div>
+               <div class="links-container-view">
+                  <a class="link-card-box model--base in--moss">
+                     <img class="link-caption-img">
+                     <div class="link-info">
+                        <h3 class="caption-title">
+                           Actividad Nombre
+                        </h3>
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde reprehenderit, culpa ex corrupti minima libero?
+                        </p>
+                     </div>
+                  </a>
+                  <a class="link-card-box model--base in--azure">
+                     <img class="link-caption-img">
+                     <div class="link-info">
+                        <h3 class="caption-title">
+                           Actividad Nombre
+                        </h3>
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita adipisci ullam dolore minus exercitationem consequatur!
+                        </p>
+                     </div>
+                  </a>
+                  <a class="link-card-box model--base in--amethyst">
+                     <img class="link-caption-img">
+                     <div class="link-info">
+                        <h3 class="caption-title">
+                           Actividad Nombre
+                        </h3>
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita adipisci ullam dolore minus exercitationem consequatur!
+                        </p>
+                     </div>
+                  </a>
+                  <a class="link-card-box model--base in--sienna">
+                     <img class="link-caption-img">
+                     <div class="link-info">
+                        <h3 class="caption-title">
+                           Actividad Nombre
+                        </h3>
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita adipisci ullam dolore minus exercitationem consequatur!
+                        </p>
+                     </div>
+                  </a>
+               </div>
+            </div>
          </section>
-         <section class="block__container--content block--3" id="activities-block">
-            
+         <section class="block__container--content block schedules--block"  id="schedules-block">
+            <div class="schedules-view layout__base">
+               <div class="title-intro-area">
+                  <h2 class="display-title">
+                     Horarios De Atención
+                  </h2>
+                  <p class="caption-paragraph is--centered">
+                     Conoce el momento exacto en el que puedes realizar tus consultas y descubre nuestros horarios de atención al público.
+                  </p>
+               </div>
+               <div class="schedules-card-container">
+                  <div class="card-box model--base in--azure type--stamp">
+                     <label class="label-box model--solid in--azure">
+                        <object class="icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M480-760q-17 0-28.5-11.5T440-800v-80q0-17 11.5-28.5T480-920q17 0 28.5 11.5T520-880v80q0 17-11.5 28.5T480-760Zm198 82q-11-11-11-27.5t11-28.5l56-57q12-12 28.5-12t28.5 12q11 11 11 28t-11 28l-57 57q-11 11-28 11t-28-11Zm122 238q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520h80q17 0 28.5 11.5T920-480q0 17-11.5 28.5T880-440h-80ZM480-40q-17 0-28.5-11.5T440-80v-80q0-17 11.5-28.5T480-200q17 0 28.5 11.5T520-160v80q0 17-11.5 28.5T480-40ZM226-678l-57-56q-12-12-12-29t12-28q11-11 28-11t28 11l57 57q11 11 11 28t-11 28q-12 11-28 11t-28-11Zm508 509-56-57q-11-12-11-28.5t11-27.5q11-11 27.5-11t28.5 11l57 56q12 11 11.5 28T791-169q-12 12-29 12t-28-12ZM80-440q-17 0-28.5-11.5T40-480q0-17 11.5-28.5T80-520h80q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440H80Zm89 271q-11-11-11-28t11-28l57-57q11-11 27.5-11t28.5 11q12 12 12 28.5T282-225l-56 56q-12 12-29 12t-28-12Zm311-71q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/>
+                           </svg>
+                        </object>
+                        <span class="label-box--tag">
+                           Atención 1
+                        </span>
+                     </label>
+                     <div class="card-info">
+                        <div>
+                           <h3 class="head-title">
+                              00:00 am <br> 24:00 pm
+                           </h3>
+                           <hr>
+                           <p>
+                              <b>Lunes a Viernes</b>
+                           </p>
+                        </div>
+                        <div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-box model--base in--azure type--stamp">
+                     <label class="label-box model--solid in--azure">
+                        <object class="icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M480-760q-17 0-28.5-11.5T440-800v-80q0-17 11.5-28.5T480-920q17 0 28.5 11.5T520-880v80q0 17-11.5 28.5T480-760Zm198 82q-11-11-11-27.5t11-28.5l56-57q12-12 28.5-12t28.5 12q11 11 11 28t-11 28l-57 57q-11 11-28 11t-28-11Zm122 238q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520h80q17 0 28.5 11.5T920-480q0 17-11.5 28.5T880-440h-80ZM480-40q-17 0-28.5-11.5T440-80v-80q0-17 11.5-28.5T480-200q17 0 28.5 11.5T520-160v80q0 17-11.5 28.5T480-40ZM226-678l-57-56q-12-12-12-29t12-28q11-11 28-11t28 11l57 57q11 11 11 28t-11 28q-12 11-28 11t-28-11Zm508 509-56-57q-11-12-11-28.5t11-27.5q11-11 27.5-11t28.5 11l57 56q12 11 11.5 28T791-169q-12 12-29 12t-28-12ZM80-440q-17 0-28.5-11.5T40-480q0-17 11.5-28.5T80-520h80q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440H80Zm89 271q-11-11-11-28t11-28l57-57q11-11 27.5-11t28.5 11q12 12 12 28.5T282-225l-56 56q-12 12-29 12t-28-12Zm311-71q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/>
+                           </svg>
+                        </object>
+                        <span class="label-box--tag">
+                           Atención 2
+                        </span>
+                     </label>
+                     <div class="card-info">
+                        <div>
+                           <h3 class="head-title">
+                              00:00 am <br> 24:00 pm
+                           </h3>
+                           <hr>
+                           <p>
+                              <b>Lunes a Viernes</b>
+                           </p>
+                        </div>
+                        <div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-box model--base in--azure type--stamp">
+                     <label class="label-box model--solid in--azure">
+                        <object class="icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M480-760q-17 0-28.5-11.5T440-800v-80q0-17 11.5-28.5T480-920q17 0 28.5 11.5T520-880v80q0 17-11.5 28.5T480-760Zm198 82q-11-11-11-27.5t11-28.5l56-57q12-12 28.5-12t28.5 12q11 11 11 28t-11 28l-57 57q-11 11-28 11t-28-11Zm122 238q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520h80q17 0 28.5 11.5T920-480q0 17-11.5 28.5T880-440h-80ZM480-40q-17 0-28.5-11.5T440-80v-80q0-17 11.5-28.5T480-200q17 0 28.5 11.5T520-160v80q0 17-11.5 28.5T480-40ZM226-678l-57-56q-12-12-12-29t12-28q11-11 28-11t28 11l57 57q11 11 11 28t-11 28q-12 11-28 11t-28-11Zm508 509-56-57q-11-12-11-28.5t11-27.5q11-11 27.5-11t28.5 11l57 56q12 11 11.5 28T791-169q-12 12-29 12t-28-12ZM80-440q-17 0-28.5-11.5T40-480q0-17 11.5-28.5T80-520h80q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440H80Zm89 271q-11-11-11-28t11-28l57-57q11-11 27.5-11t28.5 11q12 12 12 28.5T282-225l-56 56q-12 12-29 12t-28-12Zm311-71q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/>
+                           </svg>
+                        </object>
+                        <span class="label-box--tag">
+                           Atención 3
+                        </span>
+                     </label>
+                     <div class="card-info">
+                        <div>
+                           <h3 class="head-title">
+                              00:00 am <br> 24:00 pm
+                           </h3>
+                           <hr>
+                           <p>
+                              <b>Lunes a Viernes</b>
+                           </p>
+                        </div>
+                        <div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-box model--base in--azure type--stamp">
+                     <label class="label-box model--solid in--azure">
+                        <object class="icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M480-760q-17 0-28.5-11.5T440-800v-80q0-17 11.5-28.5T480-920q17 0 28.5 11.5T520-880v80q0 17-11.5 28.5T480-760Zm198 82q-11-11-11-27.5t11-28.5l56-57q12-12 28.5-12t28.5 12q11 11 11 28t-11 28l-57 57q-11 11-28 11t-28-11Zm122 238q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520h80q17 0 28.5 11.5T920-480q0 17-11.5 28.5T880-440h-80ZM480-40q-17 0-28.5-11.5T440-80v-80q0-17 11.5-28.5T480-200q17 0 28.5 11.5T520-160v80q0 17-11.5 28.5T480-40ZM226-678l-57-56q-12-12-12-29t12-28q11-11 28-11t28 11l57 57q11 11 11 28t-11 28q-12 11-28 11t-28-11Zm508 509-56-57q-11-12-11-28.5t11-27.5q11-11 27.5-11t28.5 11l57 56q12 11 11.5 28T791-169q-12 12-29 12t-28-12ZM80-440q-17 0-28.5-11.5T40-480q0-17 11.5-28.5T80-520h80q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440H80Zm89 271q-11-11-11-28t11-28l57-57q11-11 27.5-11t28.5 11q12 12 12 28.5T282-225l-56 56q-12 12-29 12t-28-12Zm311-71q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/>
+                           </svg>
+                        </object>
+                        <span class="label-box--tag">
+                           Atención 4
+                        </span>
+                     </label>
+                     <div class="card-info">
+                        <div>
+                           <h3 class="head-title">
+                              00:00 am <br> 24:00 pm
+                           </h3>
+                           <hr>
+                           <p>
+                              <b>Lunes a Viernes</b>
+                           </p>
+                        </div>
+                        <div>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
-         <section class="block__container--content block--4" id="times-block">
-            
-         </section>
-         <section class="block__container--content block--5" id="authors-block">
-            
-         </section>
-         <section class="block__container--content block--6" id="mission-block">
-            
+         <section class="block__container--content block mission--block"    id="mission-block">
+            <div class="mission-view layout__base">
+               <div class="title-intro-area">
+                  <h2 class="display-title">
+                     Sobre la Fundación
+                  </h2>
+               </div>
+               <div class="about-area">
+                  <details class="callout card model--base in--alice about-area--info">
+                     <summary class="callout-title">
+                        <h3 class="sub-title callout-title--inner">
+                           Sobre la institución
+                        </h3>
+                        <object class="callout-title--icon icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"/>
+                           </svg>
+                        </object>
+                     </summary>
+                     <div class="callout-content">
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quis ea maxime. Natus quos esse rerum ipsa mollitia repellendus, perspiciatis, cumque delectus molestias facere rem aut labore deserunt, temporibus deleniti.
+                        </p>
+                     </div>
+                  </details>
+                  <details class="callout card model--base in--alice about-area--info">
+                     <summary class="callout-title">
+                        <h3 class="sub-title callout-title--inner">
+                           Nuestra Misión
+                        </h3>
+                        <object class="callout-title--icon icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"/>
+                           </svg>
+                        </object>
+                     </summary>
+                     <div class="callout-content">
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quis ea maxime. Natus quos esse rerum ipsa mollitia repellendus, perspiciatis, cumque delectus molestias facere rem aut labore deserunt, temporibus deleniti.
+                        </p>
+                     </div>
+                  </details>
+                  <details class="callout card model--base in--alice about-area--info">
+                     <summary class="callout-title">
+                        <h3 class="sub-title callout-title--inner">
+                           Ubicación
+                        </h3>
+                        <object class="callout-title--icon icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"/>
+                           </svg>
+                        </object>
+                     </summary>
+                     <div class="callout-content">
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quis ea maxime. Natus quos esse rerum ipsa mollitia repellendus, perspiciatis, cumque delectus molestias facere rem aut labore deserunt, temporibus deleniti.
+                        </p>
+                     </div>
+                  </details>
+                  <details class="callout card model--base in--alice about-area--info">
+                     <summary class="callout-title">
+                        <h3 class="sub-title callout-title--inner">
+                           Nuestra Historia
+                        </h3>
+                        <object class="callout-title--icon icon__standar model--l">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"/>
+                           </svg>
+                        </object>
+                     </summary>
+                     <div class="callout-content">
+                        <p class="primary-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quis ea maxime. Natus quos esse rerum ipsa mollitia repellendus, perspiciatis, cumque delectus molestias facere rem aut labore deserunt, temporibus deleniti.
+                        </p>
+                     </div>
+                  </details>
+               </div>
+            </div>
          </section>
       </main>
+      <aside  class="control__panel">
+         <input class="panel--input" id="control-panel-switch" type="checkbox">
+         <label class="control__panel--switch control--button" for="control-panel-switch">
+            <object class="icon__standar model--x">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/>
+               </svg>
+            </object>
+         </label>
+         <div class="control__panel--buttons">
+            <a class="button-link control--button button-whatsapp">
+               <object class="icon__standar model--l">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  	<path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                  </svg>
+               </object>
+            </a>
+            <a class="button-link control--button button-instagram" href="https://www.instagram.com/ninosimon_lara?igsh=MW9jODc0dndyc2Zpeg==" target="_blank">
+               <object class="icon__standar model--l">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  	<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                  </svg>
+               </object>
+            </a>
+         </div>
+      </aside>
+      <footer class="footer-box">
+         <div class="footer-box--content layout__base">
+            <div class="logo-area">
+               <div class="logo-box">
+                  <figure class="logo-box--img">
+                     <img class="">
+                  </figure>
+                  <h4 class="logo-box--title caption-paragraph">
+                     Fundación Nacional<br>"El Niño Simón"
+                  </h4>
+               </div>
+            </div>
+            <div class="links-area">
+               <div class="links-group-box">
+                  <span class="links-group--title inline-eyebrow">
+                     Atención Infantil
+                  </span>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        Pediatría
+                     </span>
+                  </a>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        Vacunación
+                     </span>
+                  </a>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        Música
+                     </span>
+                  </a>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        Preescolar
+                     </span>
+                  </a>
+               </div>
+               <div class="links-group-box">
+                  <span class="links-group--title inline-eyebrow">
+                     Atención General
+                  </span>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        Salud
+                     </span>
+                  </a>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        Cultura
+                     </span>
+                  </a>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        Atención Abuelos
+                     </span>
+                  </a>
+               </div>
+               <div class="links-group-box">
+                  <span class="links-group--title inline-eyebrow">
+                     Redes y Actividades
+                  </span>
+                  <a class="inline-link" href="https://www.instagram.com/ninosimon_lara?igsh=MW9jODc0dndyc2Zpeg==" target="_blank" rel="noopener noreferrer">
+                     <span class="inline-link--text">
+                        Instagram
+                     </span>
+                  </a>
+                  <a class="inline-link">
+                     <span class="inline-link--text">
+                        WhatsApp
+                     </span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
    </div>
    
 </body>

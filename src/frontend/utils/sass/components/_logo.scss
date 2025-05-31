@@ -1,0 +1,18 @@
+//-------------------- LOGO BOX --------------------//
+.logo-box {
+   display:     flex;
+   gap:         var(--padd-base);
+   
+   .logo-box--img {
+      width:         var(--padd-hight);
+      height:        fit-content;
+      aspect-ratio:  1 / 1;
+      border-radius: 100%;
+      background:    var(--standar-backdrop);
+   }
+   
+   .logo-box--title {
+      white-space: nowrap;
+      font-weight: bold;
+   }
+}

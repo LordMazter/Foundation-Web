@@ -1,0 +1,56 @@
+//------------------- FORMATTING -------------------//
+details {
+   
+   summary {
+      list-style: none;
+   }
+   
+   summary::-webkit-details-marker {
+      display: none !important;
+   }
+}
+
+
+//------------------- DETAILS BLOCK -------------------//
+.callout {
+   display:        flex;
+   flex-direction: column;
+   width: 100% !important;
+   flex-shrink: 0;
+   
+   .callout-title {
+      display: flex;
+      
+      .callout-title--icon {
+         margin-left: auto;
+         transition:  transform .3s ease;
+      }
+   }
+   
+   
+   &.model--base {
+      padding:       var(--padd-normal);
+      border-radius: var(--padd-base);
+      background:    var(--background-tertiary);
+      max-width:     768px;
+      
+      .callout-content {
+         background:    inherit;
+         padding:       var(--padd-base);
+         margin-top:    var(--padd-normal);
+         border-radius: calc(var(--padd-base) - var(--padd-normal));
+      }
+   }
+   
+   &.in--alice {
+      
+      .callout-content {
+         background: var(--accent-alice-light);
+      }
+   }
+   
+   &[open] .callout-title--icon {
+      transform: rotate(45deg);
+   }
+   
+}

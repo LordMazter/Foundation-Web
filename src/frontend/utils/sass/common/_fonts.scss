@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 //-------------------- UTILITIES --------------------//
 .is--centered  { text-align:  center; }
 .is--alignleft { text-align:  left; }
@@ -20,16 +22,56 @@ h1, h2, h3, h4 {
    font-family: 'ZillaSlab', Times New Roman;
 }
 
-//-------------------- PARAGRAPH --------------------//
-p, span {
-   color: var(--txt-color-secondary);
-   max-width: 980px;
+.display-title {
+   color:       var(--txt-color-primary);
+   text-align:  center;
+   font-size:   var(--size-hard);
+   font-weight: bold;
+   
+   @media (width <= 540px) {
+      font-size: calc(var(--size-hard) * 0.8);
+   }
+}
+
+.head-title {
+   font-size: var(--size-medium);
+}
+
+.sub-title {
+   font-size: var(--size-standar);
+   color:     var(--txt-color-secondary);
 }
 
 .caption-title {
-   font-size: 1.4rem;
+   font-size: var(--size-base);
+}
+
+//-------------------- PARAGRAPH --------------------//
+p {
+   color:        var(--txt-color-secondary);
+   max-width:    980px;
+   font-family: 'Roboto', Arial, Sans-Serif;
+}
+
+.inline-eyebrow {
+   font-size:    var(--size-min);
+   font-family: 'Roboto', Arial, Sans-Serif;
+   color:        var(--txt-color-quarter);
+   font-weight:  bold;
+}
+
+.primary-text {
+   font-size:    var(--size-normal);
+   font-family: 'Roboto', Arial, Sans-Serif;
+   color:        var(--txt-color-tertiary);
+}
+
+.caption-paragraph {
+   font-size:    var(--size-base);
+   font-family: 'Roboto', Arial, Sans-Serif;
+   color:        var(--txt-color-primary);
    
-   @media (width <= 520px) {
-      font-size: 1.2rem;
+   @media (width <= 540px) {
+      font-size: calc(var(--size-base) * 0.9);
    }
 }

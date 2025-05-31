@@ -3,3 +3,23 @@ a {
    text-decoration: none;
    color:           inherit;
 }
+
+//---------------------- INLINE LINK ----------------------//
+.inline-link {
+   display: inline-flex;
+   
+   .inline-link--text {
+      display:    block;
+      color:      var(--txt-color-tertiary);
+      transition: color .3s ease;
+      
+      &:hover {
+         color:           var(--txt-color-primary);
+         text-decoration: underline;
+      }
+   }
+   
+   &:visited {
+      color: var(--txt-color-quarter);
+   }
+}

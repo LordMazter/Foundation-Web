@@ -9,6 +9,7 @@
    padding:    var(--padd-normal);
    position:   fixed;
    transition: width .3s ease;
+   overflow:   auto;
    z-index:    10000;
    
    .top__area--logo {
@@ -48,7 +49,7 @@
          }
          
          &.in--current {
-            background: var(--accent-sienna-low);
+            background: var(--background-secondary);
             box-shadow: inset 0 0 0 1px var(--soft-backdrop);
             
             .inline-option-nav .inline-tagline {

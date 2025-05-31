@@ -19,17 +19,17 @@
    --accent-sienna-light:   #FBEEE7;
    --accent-moss-light:     #E9EAD7;
    --accent-honeydew-light: #D7EAD8;
-   --accent-azure-light:    #E4F3F3;
+   --accent-azure-light:    #DAE7E0;
    --accent-alice-light:    #D7DFEA; 
    --accent-amethyst-light: #E9E1F4;
    
-   --accent-sienna-low:   rgba(226, 132, 89, 0.06);
-   --accent-rose-low:     rgba(190, 84, 104, 0.06);
-   --accent-moss-low:     rgba(152, 166, 99, 0.06);
-   --accent-honeydew-low: rgba(89, 168, 107, 0.06);
-   --accent-azure-low:    rgba(72, 165, 167, 0.06);
-   --accent-alice-low:    rgba(00, 137, 193, 0.06);
-   --accent-amethyst-low: rgba(151, 116, 204,0.06);
+   --accent-sienna-rgb:   255, 116, 89;
+   --accent-rose-rgb:     237, 73, 104;
+   --accent-moss-rgb:     168, 207, 99;
+   --accent-honeydew-rgb: 89, 223, 123;
+   --accent-azure-rgb:    42, 186, 190;
+   --accent-alice-rgb:    00, 137, 221;
+   --accent-amethyst-rgb: 151, 116, 255;
    
    // Font Colors
    --txt-color-primary:   #242424;
@@ -80,14 +80,15 @@
    
    // Margins 
    --marg-normal:   45px;
+   --marg-base:     50px;
    --marg-medium:   66px;
    --marg-hight:    80px;
    
    // Relatives
-   --size-min:     .84em;
-   --size-normal:   1em;
-   --size-base:     1.14rem;
-   --size-standar:  1.25em;
-   --size-medium:   1.8em;
-   --size-hard:     2.6em;
+   --size-min:     .84rem;
+   --size-normal:   1rem;
+   --size-base:     1.4rem;
+   --size-standar:  1.25rem;
+   --size-medium:   1.8rem;
+   --size-hard:     2.6rem;
 }

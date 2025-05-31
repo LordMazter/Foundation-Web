@@ -1,0 +1,84 @@
+//-------------------- FLOAT CONTROL PANEL --------------------//
+.control__panel {
+   display:       flex;
+   align-items:   center;
+   gap:           var(--padd-base);
+   background:    var(--background-tertiary);
+   padding:       var(--padd-minimus);
+   position:      sticky;
+   bottom:        var(--padd-medium);
+   margin-top:    calc(var(--padd-medium) * -1);
+   margin-bottom:    calc(var(--padd-medium) * -1.2);
+   margin-right:  var(--padd-base);
+   margin-left:   auto;
+   border-radius: 999px;
+   box-shadow:    inset 0 0 0 1px var(--standar-backdrop);
+   z-index:       10000;
+   transition:    width .3s ease;
+   animation:     scroll-right 1s ease 5s backwards;
+   
+   .control--button {
+      display:         inline-flex;
+      align-items:     center;
+      justify-content: center;
+      height:          100%;
+      aspect-ratio:    1 / 1;
+      padding:         var(--padd-normal);
+      border-radius:   50%;
+      
+      &.button-whatsapp {
+         background: var(--accent-honeydew);
+         
+         svg {
+            fill: var(--white);
+         }
+      }
+      &.button-instagram {
+         background: var(--accent-rose);
+         opacity:    0;
+         
+         svg{
+            fill: var(--white);
+         }
+      }
+   }
+   
+   .control__panel--buttons {
+      display:      flex;
+      gap:          var(--padd-minimus);
+      margin-right: calc(var(--marg-medium) * -1);
+      height:       100%;
+      transition:   margin-right .3s ease;
+   }
+
+   .panel--input {
+      display: none;
+      
+      &:checked~.control__panel--buttons {
+         margin-right: 0;
+         
+         .button-instagram {
+            opacity:    1;
+            transition: opacity .3s ease .3s;
+         }
+      }
+   }
+   
+   @media (width <= 540px) {
+      margin-right: calc(var(--marg-medium) * -1.2);
+      
+      &:has(input[type="checkbox"]:checked) {
+         margin-right: var(--padd-minimus);
+         transition:   margin-right .3s ease;
+      }
+   }
+}
+
+@keyframes scroll-right {
+   from {
+      transform: translateX(500px);
+   }
+   to {
+      transform: translateX(0px);
+   }
+}

@@ -12,13 +12,13 @@ button {
 	display:    inline-block;
 	overflow:   hidden;
 	transition: background .15s ease, transform .2s ease-out, filter .2s ease;
+	cursor:     pointer;
 	
 	/* <a> */
 	.button-link {
 		display:         flex;
 		justify-content: center;
 		align-items:     center;
-		padding:         var(--padd-normal) var(--padd-medium);
 		gap:             var(--padd-normal);
 		
 		/* <span> - text */
@@ -37,6 +37,10 @@ button {
 		border:     1px solid;
 		background: none;
 		
+		.button-link {
+		   padding:    calc(var(--padd-normal) * 1.3) var(--padd-medium);
+		}
+		
 		&.cta {
 			border-color: var(--accent-color);
 			color:        var(--accent-color);
@@ -49,24 +53,36 @@ button {
 				}
 			}
 		}
-		/* EXAMPLES: */
-		/* &.basic {...} */
-		/* &.classic {...} */
 	}
 	&.model-filled {
 		box-shadow: inset 0 0 0 1px var(--standar-backdrop);
+		color:       var(--white);
+		
+		.button-link {
+		   padding:    var(--padd-normal) var(--padd-medium);
+		}
 
 		&.cta {
 			background: var(--accent-color);
 			color:      var(--white); /* may change */
-			
-			&:hover {
-				filter: brightness(0.90);
-			}
 		}
-		/* EXAMPLES:
-		&.basic {...}
-		&.classic {...} */
+		&.in--rose {
+		   background: var(--accent-rose);
+		}
+		&.in--azure {
+		   background: var(--accent-azure);
+		   
+		   .linked-tagline-btn {
+		      color: var(--white);
+		   }
+		}
+		&.in--amethyst {
+		   background: var(--accent-amethyst);
+		}
+		
+		&:hover {
+			filter: brightness(0.90);
+		}
 	}
 	
 	/* Shape */
